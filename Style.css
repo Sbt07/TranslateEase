@@ -1,0 +1,148 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, #f5f5f5, #fffefe);
+}
+.container{
+    width: 690px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 8px 8px 15px 4px #888888;
+}
+.wrapper{
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.text-input .to-text{
+    border-radius: 2px;
+    border-left: 1px solid #bbb;
+}
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: none;
+    padding: 10px 15px;
+}
+.controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+.controls .row.from .icons{
+    padding-right: 15px;
+}
+.controls .row.to .icons{
+    padding-left: 15px;
+}
+.controls .icons{
+    width: 38%;
+}
+.controls .icons i{
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+}
+.controls .row select{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+}
+.controls .exchange{
+    color: #9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+}
+.controls .icons i:hover, .controls .exchange:hover{
+    color: #464646;
+}
+.container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    background: #2f4b88;
+}
+.container button:hover{
+    background: #173067;
+}
+
+@media (max-width:400px){
+    .container{
+        margin-top: -30px;
+        width: 90%;
+        padding: 25px;
+        box-shadow: 3px 3px 7px 1px #888888;
+    }
+    .text-input textarea{
+        height: 180px;
+        font-size: 14px;
+        font-weight: 550;
+        padding: 8px 12px;
+    }
+    .controls{
+        padding: 4px 6px;
+    }
+    .controls .row.from .icons{
+        padding-right: 2px;
+    }
+    .controls .row.to .icons{
+        padding-left: 2px;
+    }
+    .controls .icons{
+        width: 20%;
+    }
+    .controls .icons i{
+        width: 30px;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+    .controls .icons.toicon{
+        width: 30px;
+        margin-right: 2px;
+        font-size: 12px;
+    }
+    .controls .row .f{
+        font-size: 12px;
+        margin-left: -35px;
+    }
+    .controls .row .t{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .controls .exchange{
+        font-size: 12px;
+        margin: 2px;
+    }
+}
